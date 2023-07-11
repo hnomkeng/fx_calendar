@@ -83,7 +83,7 @@ def sendRequest(dateInput):
         print(type(inst))    # the exception instance
         print(inst.args)     # arguments stored in .args
         print(inst)          # __str__ allows args to be printed directly, but may be overridden in exception subclasses
-        x, y = inst.args     # unpack args
+        x, y = inst.args
         print('x =', x)
         print('y =', y)
         return -1
@@ -204,9 +204,9 @@ def eventsInWeek(week, year):
         print(type(inst))    # the exception instance
         print(inst.args)     # arguments stored in .args
         print(inst)          # __str__ allows args to be printed directly, but may be overridden in exception subclasses
-        x, y = inst.args     # unpack args
+        x = inst.args     # unpack args
         print('x =', x)
-        print('y =', y)
+        #print('y =', y)
         return -1
 
 # feed data events whole week of the date input
@@ -252,9 +252,9 @@ def eventsInYear(year):
         print(type(inst))    # the exception instance
         print(inst.args)     # arguments stored in .args
         print(inst)          # __str__ allows args to be printed directly, but may be overridden in exception subclasses
-        x, y = inst.args     # unpack args
+        x = inst.args     # unpack args
         print('x =', x)
-        print('y =', y)
+        #print('y =', y)
         return -1
 
 # ------------ TEST ------------------------------
